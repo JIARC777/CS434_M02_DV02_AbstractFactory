@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class Client : MonoBehaviour
     public int howManyEngines;
     public int howManyWings;
 
+    public Text numWings;
+    public Text numEngines;
+    public Text containEngine;
     public AbstractFactory factory;
     // Update is called once per frame
     void Update()
@@ -47,9 +51,12 @@ public class Client : MonoBehaviour
         if (Input.GetKeyDown("["))
         {
             howManyEngines--;
-            if (howManyEngines > 2)
-                howManyEngines = 2;
+            if (howManyEngines < 0)
+                howManyEngines = 0;
         }
+        numWings.text = howManyWings.ToString();
+        numEngines.text = howManyEngines.ToString();
+        containEngine.text = engine.ToString();
 
     }
 }

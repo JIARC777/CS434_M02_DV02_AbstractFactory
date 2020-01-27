@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6852775531955587077}
   - component: {fileID: 3803808748032779826}
   - component: {fileID: 3789031419650575671}
+  - component: {fileID: -7007050420219521887}
   m_Layer: 0
   m_Name: 1WingGlider
   m_TagString: Untagged
@@ -93,6 +94,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7007050420219521887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531833045569926673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2310b01e07c424d85ef2bee7c9b6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4115617558775683258
 GameObject:
   m_ObjectHideFlags: 0
